@@ -77,7 +77,9 @@ function divisionyresto(){
     let num2 = 30;
     let division = num / num2
     let modulo = num % num2
-    alert()
+    alert(`La division es: ${division}
+        \nEl modulo es: ${modulo}
+        \nEl resultado se da ya que el modulo y la division le quitan parte al numero`)
 }
 // 🔹 Ejercicio 7: Comparación de números
 // Declara dos números:
