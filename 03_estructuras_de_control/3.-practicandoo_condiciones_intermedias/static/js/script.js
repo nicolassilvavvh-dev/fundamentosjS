@@ -150,15 +150,15 @@ function ejercicio18() {
     let nota2 = 2.9;
     let nota3 = 2.3;
     let promedio = nota + nota2 + nota3 / 3;
+    let nombreMayusculas = nombre.toUpperCase();
 if (promedio >= 6.0) {
-    alert(`Nombre: ${nombre.toUpperCase()} cantidad de caracteres del nombre: ${nombre.length}
+    alert(`Nombre: ${nombreMayusculas} cantidad de caracteres del nombre: ${nombre.length}
     \nPromedio: ${Math.round(promedio)} Destacado`);
 } else if (promedio >= 4.0) {
-    alert(`Nombre: ${nombre.toUpperCase()} cantidad de caracteres del nombre: ${nombre.length}
+    alert(`Nombre: ${nombreMayusculas} cantidad de caracteres del nombre: ${nombre.length}
     \nPromedio: ${Math.round(promedio)} Aprobado`);
-} else if (promedio >= 4.0) {
 } else  {
-    alert(`Nombre: ${nombre.toUpperCase()} cantidad de caracteres del nombre: ${nombre.length}
+    alert(`Nombre: ${nombreMayusculas} cantidad de caracteres del nombre: ${nombre.length}
     \nPromedio: ${Math.round(promedio)} Reprobado`);
 }
 }
