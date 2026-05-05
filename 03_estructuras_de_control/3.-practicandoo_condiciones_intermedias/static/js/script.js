@@ -162,3 +162,116 @@ if (promedio >= 6.0) {
     \nPromedio: ${Math.round(promedio)} Reprobado`);
 }
 }
+
+// Ejercicio 19: Clasificación de desempeño con más niveles
+// Crear una función que almacene el nombre de un estudiante y su promedio final. Luego:
+// Convertir el nombre a mayúsculas
+// Clasificar el rendimiento según:
+// ≥ 6.5 → Sobresaliente
+// ≥ 6.0 → Muy buen rendimiento
+// ≥ 5.0 → Buen rendimiento
+// ≥ 4.0 → Suficiente
+// < 4.0 → Insuficiente
+// Además:
+// Mostrar la cantidad de caracteres del nombre
+function ejercicio19(){
+    let nombre = "Asgore dreemurr";
+    let nombreM = nombre.toUpperCase();
+    let n1 = 6.6;
+    let n2 = 1.2;
+    let n3 = 2.1;
+    let promedio = n1 + n2 + n3 / 3;
+    if (Math.round(promedio) >= 6.5){
+        alert(`Nombre del estudiante: ${nombreM}
+            \nPromedio: ${Math.round(promedio)} sobresaliente`)
+    } else if (Math.round(promedio) >= 6) {
+        alert(`Nombre del estudiante: ${nombreM}
+            \nPromedio: ${Math.round(promedio)} muy buen redimiento`)
+    } else if (Math.round(promedio) >= 5.0) {
+        alert(`Nombre del estudiante: ${nombreM}
+            \nPromedio: ${Math.round(promedio)} Buen rendimiento`)
+    } else if (Math.round(promedio) >= 4.0) {
+        alert(`Nombre del estudiante: ${nombreM}
+            \nPromedio: ${Math.round(promedio)} Suficiente`) 
+    } else {
+        alert(`Nombre del estudiante: ${nombreM}
+            \nPromedio: ${Math.round(promedio)} Insuficiente`)
+    }
+}
+// Ejercicio 20: Clasificación de producto con múltiples rangos de precio
+// Crear una función que almacene el nombre de un producto y su precio. Luego:
+// Convertir el producto a minúsculas
+// Clasificar el precio:
+// ≥ 200.000 → Producto de lujo
+// ≥ 100.000 → Producto premium
+// ≥ 50.000 → Producto estándar
+// ≥ 20.000 → Producto económico
+// < 20.000 → Producto básico
+// Además:
+// Aplicar descuento:
+// Si es ≥ 100.000 → 15%
+// Si es ≥ 50.000 → 10%
+// Si es menor → sin descuento
+// Mostrar:
+// Nombre transformado
+// Largo del nombre del producto
+// Precio original
+// Precio final
+// Clasificación
+function ejercicio20() {
+    let nombre = "Trono";
+    let producto = 200000;
+    let descuento = producto * 0.15;
+    if (producto >= 200000) {
+        alert(`El producto es: ${nombre.toLowerCase()} su largo es: ${nombre.length}
+            \nEl precio original es de: ${producto}
+            \ny su precio final es: ${producto - (descuento)}
+            \nEs un producto de lujo con 15% de descuento`);
+    } else if (producto >= 100000) {
+        alert(`El producto es: ${nombre.toLowerCase()} su largo es: ${nombre.length}
+            \nEl precio original es de: ${producto}
+            \ny su precio final es: ${producto - (descuento)}
+            \nEs un producto de premiun con 15% de descuento`);
+    } else if (producto >= 50000) {
+        alert(`El producto es: ${nombre.toLowerCase()} su largo es: ${nombre.length}
+            \nEl precio original es de: ${producto}
+            \ny su precio final es: ${producto - (producto * 0.10)}
+            \nEs un producto de estandar con 10% de descuento`);
+    } else if (producto >= 20000) {
+        alert(`El producto es: ${nombre.toLowerCase()} su largo es: ${nombre.length}
+            \nEl precio original es de: ${producto}
+            \ny su precio final es: ${producto}
+            \nEs un producto economico y no tiene descuento`);
+    } else {
+        alert(`El producto es: ${nombre.toLowerCase()} su largo es: ${nombre.length}
+            \nEl precio original es de: ${producto}
+            \ny su precio final es: ${producto}
+            \nEs un producto basico y no tiene descuento`);
+    }
+}
+// Ejercicio 21: Evaluación de frase y puntaje con múltiples condiciones
+// Crear una función que almacene una frase y un puntaje. Luego:
+// Convertir la frase a mayúsculas
+// Contar su largo
+// Clasificar el puntaje:
+// ≥ 90 → Excelente
+// ≥ 80 → Muy bueno
+// ≥ 70 → Bueno
+// ≥ 60 → Regular
+// < 60 → Deficiente
+// Además:
+// Clasificar la frase por tamaño:
+// 30 → Muy larga
+// 20 → Larga
+// 10 → Mediana
+// ≤ 10 → Corta
+function ejercicio21() {
+    let frase = "Papaya";
+    let fraseM = frase.toUpperCase();
+    let puntaje = Math.floor(Math.random()*100)+1;
+    if (puntaje >= 90){
+        alert(`La frase es: ${fraseM}
+            \nEl puntaje es: ${puntaje}
+            \nEl tamaño es: ${frase.length}`)
+    }
+}
